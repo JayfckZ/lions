@@ -1,12 +1,16 @@
-import { useState } from 'react'
-
+import AgendeSuaVisita from './pages/AgendeSuaVisita'
+import Catalogo from './pages/Catalogo'
+import Home from './pages/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/agende-sua-visita" element={<AgendeSuaVisita />} />
+        <Route path="/catalogo" element={<Catalogo />} />
+      </Routes>
+    </Router>
   )
 }
 
