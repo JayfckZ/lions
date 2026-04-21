@@ -82,7 +82,7 @@ const Home = () => {
               <i className="bi bi-arrow-right-circle"></i>
             </span>
           </CTA>
-          <CTA to="/contato">
+          <CTA to="/agende-sua-visita">
             <i className="bi bi-chat-left-text icon"></i>
             <h3>Solicitar contato</h3>
             <span>
